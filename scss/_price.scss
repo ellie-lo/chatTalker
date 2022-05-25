@@ -1,10 +1,11 @@
+/*global*/
 ::-webkit-scrollbar {
-    /*隐藏滚轮*/
+    /*隱藏滾輪*/
     display: none;
 }
 
-.border-radius-12{
-border-radius: 12px;
+.border-radius-12 {
+    border-radius: 12px;
 }
 
 .bg-cirle-4 {
@@ -12,6 +13,7 @@ border-radius: 12px;
     left: -200px;
     width: 360px;
     height: 360px;
+
     @include Medium {
         top: 180%;
         left: -200px;
@@ -65,6 +67,16 @@ border-radius: 12px;
     .nav-pills {
         overflow-y: scroll;
     }
+
+    .Program-nav-item {
+        border: 1px solid #56C4C5;
+        border-radius: 50px;
+    }
+
+    .Program-nav-item.active {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .program-nav-item-card {
@@ -73,26 +85,16 @@ border-radius: 12px;
     padding: 12px 12px;
     margin: 0 auto 24px;
     background-color: #fff;
+    .program-card-info-box {
+        background-color: #F5F5F5;
+        border-radius: 12px;
+        padding: 25px 0;
+    }
 }
 
-.Program-nav-item {
-    border: 1px solid #56C4C5;
-    border-radius: 50px;
-}
-
-.Program-nav-item.active {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.program-card-info-box {
-    background-color: #F5F5F5;
-    border-radius: 12px;
-    padding: 25px 0;
-}
-
-.accordion-item{
+.accordion-item {
     width: 80%;
+
     @include Medium {
         width: 100%;
     }

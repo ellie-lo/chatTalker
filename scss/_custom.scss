@@ -165,7 +165,7 @@ li {
     }
 }
 
-.top {
+.top-btn {
     position: fixed;
     right: 5%;
     top: 80%;
@@ -268,15 +268,6 @@ li {
         margin-right: 3px;
     }
 
-    .evaluation-check {
-        .evaluation-check-item {
-            padding: 0;
-            width: 10px;
-            height: 10px;
-            background-color: #FFD153;
-            border-radius: 50%;
-        }
-    }
 }
 .swiper-pagination-bullet-active{
     background:#FFD153;

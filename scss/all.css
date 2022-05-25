@@ -2570,7 +2570,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color-adjust: exact;
 }
 
 .form-check-input[type="checkbox"] {
@@ -12106,7 +12105,7 @@ li {
   }
 }
 
-.top {
+.top-btn {
   position: fixed;
   right: 5%;
   top: 80%;
@@ -12206,14 +12205,6 @@ li {
   margin-right: 3px;
 }
 
-.evaluation .evaluation-check .evaluation-check-item {
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #FFD153;
-  border-radius: 50%;
-}
-
 .swiper-pagination-bullet-active {
   background: #FFD153;
 }
@@ -12246,8 +12237,9 @@ footer .footer-copyright {
   background-color: #F5F5F5;
 }
 
+/*global*/
 ::-webkit-scrollbar {
-  /*隐藏滚轮*/
+  /*隱藏滾輪*/
   display: none;
 }
 
@@ -12318,6 +12310,16 @@ footer .footer-copyright {
   overflow-y: scroll;
 }
 
+.Program .Program-nav-item {
+  border: 1px solid #56C4C5;
+  border-radius: 50px;
+}
+
+.Program .Program-nav-item.active {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .program-nav-item-card {
   border-radius: 12px;
   max-width: 500px;
@@ -12326,17 +12328,7 @@ footer .footer-copyright {
   background-color: #fff;
 }
 
-.Program-nav-item {
-  border: 1px solid #56C4C5;
-  border-radius: 50px;
-}
-
-.Program-nav-item.active {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.program-card-info-box {
+.program-nav-item-card .program-card-info-box {
   background-color: #F5F5F5;
   border-radius: 12px;
   padding: 25px 0;
