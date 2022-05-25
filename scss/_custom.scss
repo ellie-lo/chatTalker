@@ -99,6 +99,12 @@ li {
     }
 }
 
+@mixin Xsmall {
+    @media(max-width:390px) {
+        @content;
+    }
+}
+
 /*header*/
 .header-bottom {
     @include Medium {
@@ -120,17 +126,17 @@ li {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: -100;
+    z-index: -200;
 }
 
 .bg-cirle-1 {
-    top: 20%;
+    top:633px;
     left: -200px;
     width: 360px;
     height: 360px;
 
     @include Medium {
-        top: 16%;
+        top:850px;
         left: -120px;
         width: 200px;
         height: 200px;
@@ -138,13 +144,13 @@ li {
 }
 
 .bg-cirle-2 {
-    top: 55%;
+    top: 2000px;
     right: -150px;
     width: 310px;
     height: 310px;
     
     @include Medium {
-        top: 59%;
+        top: 2300px;
         right: -85px;
         width: 200px;
         height: 200px;
@@ -152,13 +158,13 @@ li {
 }
 
 .bg-cirle-3 {
-    top: 88%;
+    top: 3200px;
     left: 50px;
     width: 150px;
     height: 150px;
     
     @include Medium {
-        top: 94%;
+        top: 3500px;
         left: -30px;
         width: 120px;
         height: 120px;
@@ -169,9 +175,10 @@ li {
     position: fixed;
     right: 5%;
     top: 80%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     z-index: 100;
+    
 }
 
 .topbar {
@@ -180,6 +187,9 @@ li {
     header {
         img {
             height: 40px;
+            @include Xsmall {
+                max-height: 30px;
+            }
         }
     }
 

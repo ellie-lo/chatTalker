@@ -2570,6 +2570,7 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  color-adjust: exact;
 }
 
 .form-check-input[type="checkbox"] {
@@ -12054,11 +12055,11 @@ li {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: -100;
+  z-index: -200;
 }
 
 .bg-cirle-1 {
-  top: 20%;
+  top: 633px;
   left: -200px;
   width: 360px;
   height: 360px;
@@ -12066,7 +12067,7 @@ li {
 
 @media (max-width: 768px) {
   .bg-cirle-1 {
-    top: 16%;
+    top: 850px;
     left: -120px;
     width: 200px;
     height: 200px;
@@ -12074,7 +12075,7 @@ li {
 }
 
 .bg-cirle-2 {
-  top: 55%;
+  top: 2000px;
   right: -150px;
   width: 310px;
   height: 310px;
@@ -12082,7 +12083,7 @@ li {
 
 @media (max-width: 768px) {
   .bg-cirle-2 {
-    top: 59%;
+    top: 2300px;
     right: -85px;
     width: 200px;
     height: 200px;
@@ -12090,7 +12091,7 @@ li {
 }
 
 .bg-cirle-3 {
-  top: 88%;
+  top: 3200px;
   left: 50px;
   width: 150px;
   height: 150px;
@@ -12098,7 +12099,7 @@ li {
 
 @media (max-width: 768px) {
   .bg-cirle-3 {
-    top: 94%;
+    top: 3500px;
     left: -30px;
     width: 120px;
     height: 120px;
@@ -12109,8 +12110,8 @@ li {
   position: fixed;
   right: 5%;
   top: 80%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   z-index: 100;
 }
 
@@ -12120,6 +12121,12 @@ li {
 
 .topbar header img {
   height: 40px;
+}
+
+@media (max-width: 390px) {
+  .topbar header img {
+    max-height: 30px;
+  }
 }
 
 .topbar .bg-img-sm {
