@@ -1,0 +1,99 @@
+::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+}
+
+.border-radius-12{
+border-radius: 12px;
+}
+
+.bg-cirle-4 {
+    top: 200%;
+    left: -200px;
+    width: 360px;
+    height: 360px;
+    @include Medium {
+        top: 180%;
+        left: -200px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.price-bg {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 470px;
+    background-color: #F7F9FD;
+    border-radius: 0 0 0 300px;
+    z-index: -100;
+
+    .price-bg-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.price-bg2 {
+    @include Medium {
+        top: -2px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F7F9FD;
+        border-radius: 0 0 0 300px;
+        z-index: -100;
+    }
+
+    .section-price-bg {
+        @include Medium {
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg);
+            background-position: left top;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding: 48px 0 500px 0;
+            z-index: 100;
+        }
+    }
+}
+
+.Program {
+    overflow: hidden;
+
+    .nav-pills {
+        overflow-y: scroll;
+    }
+}
+
+.program-nav-item-card {
+    border-radius: 12px;
+    max-width: 500px;
+    padding: 12px 12px;
+    margin: 0 auto 24px;
+    background-color: #fff;
+}
+
+.Program-nav-item {
+    border: 1px solid #56C4C5;
+    border-radius: 50px;
+}
+
+.Program-nav-item.active {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.program-card-info-box {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 25px 0;
+}
+
+.accordion-item{
+    width: 80%;
+    @include Medium {
+        width: 100%;
+    }
+}
