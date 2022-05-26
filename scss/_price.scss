@@ -9,16 +9,18 @@
 }
 
 .bg-cirle-4 {
-    top: 200%;
-    left: -200px;
-    width: 360px;
-    height: 360px;
-
+    left: 0px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 94px;
+    height: 361px;
+    background-size: 361px;
+    background-position: right;
+    z-index: -200;
     @include Medium {
-        top: 180%;
-        left: -200px;
-        width: 300px;
-        height: 300px;
+        width: 96px;
+        height: 204px;
+        background-size: 204px;
     }
 }
 
@@ -62,8 +64,6 @@
 }
 
 .Program {
-    overflow: hidden;
-
     .nav-pills {
         overflow-y: scroll;
     }

@@ -12033,14 +12033,11 @@ li {
   margin-top: 100px;
 }
 
-/*RWD*/
-/*header*/
-@media (max-width: 768px) {
-  .header-bottom {
-    border-bottom: 3px solid #FFD153;
-  }
+.mb-20 {
+  margin-bottom: 200px;
 }
 
+/*RWD*/
 .bg-img {
   width: 860px;
   height: 786px;
@@ -12051,58 +12048,74 @@ li {
   z-index: -100;
 }
 
+/*背景球*/
 .bg-cirle {
   position: absolute;
-  background-size: contain;
   background-repeat: no-repeat;
-  z-index: -200;
 }
 
 .bg-cirle-1 {
-  top: 633px;
-  left: -200px;
-  width: 360px;
+  left: 0px;
+  top: calc(100vh-180px);
+  width: 180px;
   height: 360px;
+  background-position: right;
 }
 
 @media (max-width: 768px) {
   .bg-cirle-1 {
-    top: 850px;
-    left: -120px;
-    width: 200px;
-    height: 200px;
+    top: 200vh;
+    width: 60px;
+    height: 126px;
+    background-size: 126px;
   }
 }
 
 .bg-cirle-2 {
-  top: 2000px;
-  right: -150px;
-  width: 310px;
-  height: 310px;
+  top: calc(100vh-280px);
+  right: 0px;
+  width: 200px;
+  height: 300px;
+  background-size: 300px;
+  background-position: left;
+  z-index: -200;
 }
 
 @media (max-width: 768px) {
   .bg-cirle-2 {
-    top: 2300px;
-    right: -85px;
-    width: 200px;
-    height: 200px;
+    right: 0px;
+    width: 88px;
+    height: 135px;
+    background-size: 135px;
   }
 }
 
 .bg-cirle-3 {
-  top: 3200px;
-  left: 50px;
+  top: 60px;
+  left: 0px;
   width: 150px;
   height: 150px;
+  background-position: right;
+  background-size: 150px;
 }
 
 @media (max-width: 768px) {
   .bg-cirle-3 {
-    top: 3500px;
-    left: -30px;
-    width: 120px;
-    height: 120px;
+    width: 77px;
+    height: 150px;
+  }
+}
+
+/*header*/
+@media (max-width: 768px) {
+  .price-topbar {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-bottom {
+    border-bottom: 3px solid #FFD153;
   }
 }
 
@@ -12113,10 +12126,6 @@ li {
   width: 60px;
   height: 60px;
   z-index: 100;
-}
-
-.topbar {
-  margin-bottom: 200px;
 }
 
 .topbar header img {
@@ -12255,18 +12264,22 @@ footer .footer-copyright {
 }
 
 .bg-cirle-4 {
-  top: 200%;
-  left: -200px;
-  width: 360px;
-  height: 360px;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 94px;
+  height: 361px;
+  background-size: 361px;
+  background-position: right;
+  z-index: -200;
 }
 
 @media (max-width: 768px) {
   .bg-cirle-4 {
-    top: 180%;
-    left: -200px;
-    width: 300px;
-    height: 300px;
+    width: 96px;
+    height: 204px;
+    background-size: 204px;
   }
 }
 
@@ -12307,10 +12320,6 @@ footer .footer-copyright {
     padding: 48px 0 500px 0;
     z-index: 100;
   }
-}
-
-.Program {
-  overflow: hidden;
 }
 
 .Program .nav-pills {
